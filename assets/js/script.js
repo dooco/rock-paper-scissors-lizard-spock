@@ -9,7 +9,7 @@ console.log("link is working");
  const playerImage = document.getElementById('player-image');
  const computerImage = document.getElementById('computer-image');
  const messages =document.getElementById('messages');
- const choices = ["rock","paper","scissors","lixard","spock"];
+ const choices = ["rock","paper","scissors","lizard","spock"];
  /**
   * Add event listener to buttons
   */
@@ -35,4 +35,10 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
 updateScores(result);
  }
- 
+ function checkWinner(computerSelection,humanSelection) {
+    console.log(computerSelection);
+    console.log(humanSelection);
+ }
+function updateScores(winingResult) {
+    console.log(winingResult);
+}
