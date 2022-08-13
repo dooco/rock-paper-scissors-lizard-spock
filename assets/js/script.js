@@ -10,6 +10,13 @@ console.log("link is working");
  const computerImage = document.getElementById('computer-image');
  const messages =document.getElementById('messages');
  const choices = ["rock","paper","scissors","lizard","spock"];
+ const setChoice = {
+    rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
+    paper: { name: 'Paper', defeats: ['rock', 'spock'] },
+    scissors: { name: 'Scissors', defeats: ['paper', 'lizard'] },
+    lizard: { name: 'Lizard', defeats: ['paper', 'spock'] },
+    spock: { name: 'Spock', defeats: ['scissors', 'rock'] },
+  };
  /**
   * Add event listener to buttons
   */
@@ -35,10 +42,23 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
 updateScores(result);
  }
- function checkWinner(computerSelection,humanSelection) {
+ function checkWinner(computerSelection, playerSelection) {
     console.log(computerSelection);
-    console.log(humanSelection);
+    console.log(playerSelection);
+    if (computerSelection === playerSelection) {
+        messages.innerText = "It's a Tie";
+        return('Tie');
+    } else {
+        const choice = setChoice[playerSelection];
+        if (choice.defeats.indexOf(computerSelection) > -1) {
+            messages.textContent = 'You Won';
+            playerScore.textContent = ++playerScore.textContent;
+        } else {
+            messages.textContent = 'You Lost';
+            computerScore.textContent = ++computerScore.textContent;
+        }
+    }
  }
-function updateScores(winingResult) {
-    console.log(winingResult);
+function updateScores(result) {
+    console.log(result);
 }
