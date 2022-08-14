@@ -9,6 +9,7 @@ console.log("link is working");
  const playerImage = document.getElementById('player-image');
  const computerImage = document.getElementById('computer-image');
  const messages =document.getElementById('messages');
+ messages.innerText = 'New Game';
  const choices = ["rock","paper","scissors","lizard","spock"];
  const setChoice = {
     rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
@@ -61,4 +62,9 @@ updateScores(result);
  }
 function updateScores(result) {
     console.log(result);
+}
+function resetAll() {
+    playerScore.textContent = 0;
+    computerScore.textContent = 0;
+    messages.textContent = "New Game";
 }

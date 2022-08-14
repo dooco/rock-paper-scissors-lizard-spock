@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/75dd0afa5c.js" crossorigin="anonymous"></script>
     <title>Rock-Paper-Scissors-Lizard-Spock</title>
 </head>
 <body>
     <header>
-        <h2>Rock 👊, Paper ✋, Scissors ✌️, Lizard 🤏, Spock 🖖</h2>
+        <h2>Rock 👊 Paper ✋ Scissors ✌️ Lizard 🤏 Spock 🖖</h2>
     </header>
     <section class="game-area">
         <div>
@@ -20,7 +21,8 @@
             <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
             <button aria-label="Spock" data-choice="4" class="control">Spock</button>
         </div>
-        <div id="messages"></div>
+        <div class="div reset "><h2><i class="fa-solid fa-arrows-rotate" title = "Reset" onclick="resetAll()"></i></h2></div>
+        <div id="messages"></div>        
         <div class="player">
             <h3 class="scores">Your score: <span id="player-score">0</span></h3>
             <!-- <h1>👊  ✋  ✌️  🤏 🖖</h1> -->

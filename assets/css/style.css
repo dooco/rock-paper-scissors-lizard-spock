@@ -1,4 +1,9 @@
 /* Main view setup */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
 html {
     min-height: 100%;
     position: relative;
@@ -40,13 +45,21 @@ footer {
     text-align: center;
 }
 
+
 .control {
     display: inline-block;
     margin: .125rem;
     width: 5rem;
     height: 2.5rem;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 100ms;
 }
 
+.control:hover {
+    transform: scale(1.2);
+}
 #message {
     height: 1.125rem;
 }
