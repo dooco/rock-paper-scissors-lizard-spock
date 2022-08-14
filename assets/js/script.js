@@ -52,10 +52,10 @@ updateScores(result);
     } else {
         const choice = setChoice[playerSelection];
         if (choice.defeats.indexOf(computerSelection) > -1) {
-            messages.textContent = 'You Won';
+            messages.textContent = 'Player Wins';
             playerScore.textContent = ++playerScore.textContent;
         } else {
-            messages.textContent = 'You Lost';
+            messages.textContent = 'Player Looses';
             computerScore.textContent = ++computerScore.textContent;
         }
     }

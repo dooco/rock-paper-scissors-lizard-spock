@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 /* Main view setup */
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -11,7 +13,9 @@ html {
 
 body {
     background-color: blueviolet;
-    font-family: fantasy, sans-serif;
+    font-family: otomanopee-one, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -33,6 +37,10 @@ footer {
     text-align: center;
     color: #fff;
     background-color: black;
+}
+img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 /* Game area */
