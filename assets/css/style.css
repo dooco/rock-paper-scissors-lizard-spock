@@ -38,6 +38,8 @@ footer {
     color: #fff;
     background-color: black;
 }
+ /* style images */
+
 img {
     width: 100%;
     border-radius: 5px;
@@ -66,12 +68,16 @@ img {
     transition: 100ms;
 }
 
+/* Player selection increases in size when hovered over */
+
 .control:hover {
     transform: scale(1.2);
 }
 #message {
     height: 1.25rem;
 }
+
+/* Player positioned on Left */
 
 .player {
     background-color: lightblue;
@@ -84,6 +90,9 @@ img {
 #player-image {
     width: 45%;
 }
+
+/* Computer positioned on right */
+
 .computer {
     background-color: lightcoral;
     float: right;

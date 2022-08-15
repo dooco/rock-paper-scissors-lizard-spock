@@ -1,4 +1,4 @@
-console.log("link is working");
+
 /**
  * Declare constants for DOM elements and choices
  * 
@@ -41,11 +41,18 @@ computerImage.src = `assets/images/${choices[computerChoice]}.png`;
 computerImage.alt = choices[computerChoice];
 let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
+/**
+ * updates scrore for player and computer and updates messages
+ */
+
 updateScores(result);
  }
+ /** Check winner -  first check if there is a tie and then 
+  * compare player selection to computer selection using
+  * indexOf setChoice array
+  * Credit: github.com/JacintoDesign/spock-rock-game 
+  */
  function checkWinner(computerSelection, playerSelection) {
-    console.log(computerSelection);
-    console.log(playerSelection);
     if (computerSelection === playerSelection) {
         messages.innerText = "It's a Tie";
         return('Tie');
@@ -60,9 +67,10 @@ updateScores(result);
         }
     }
  }
-function updateScores(result) {
-    console.log(result);
-}
+/**
+ * Resets player and computer score variables, message and resets player and 
+ * computer images to default start images
+ */
 function resetAll() {
     playerScore.textContent = 0;
     computerScore.textContent = 0;

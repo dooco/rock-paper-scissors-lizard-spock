@@ -12,10 +12,12 @@
     <title>Rock-Paper-Scissors-Lizard-Spock</title>
 </head>
 <body>
+    <!-- Header used to introduce emojis to player -->
     <header>
         <h2>Rock 👊 Paper ✋ Scissors ✌️ Lizard 🤏 Spock 🖖</h2>
     </header>
     <section class="game-area">
+        <!-- Player selects one of the five game options -->
         <div>
             <p>Make a choice</p>
             <button aria-label="Rock" data-choice="0" class="control">Rock</button>
@@ -24,9 +26,10 @@
             <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
             <button aria-label="Spock" data-choice="4" class="control">Spock</button>
         </div>
+        <!-- Message area displays whether player wins or loses and New Game on reset -->
         <div id="messages"></div>  
+        <!-- Reset game calls JS reset function -->
         <div class="div reset "><h2><i class="fa-solid fa-arrows-rotate" title = "Reset" onclick="resetAll()"></i></h2></div>
-              
         <div class="player">
             <h3 class="scores">Your score: <span id="player-score">0</span></h3>
             <img id="player-image" src="/assets/images/rps.png" alt="Rock Paper Scissors Lizard Spock">
@@ -37,11 +40,12 @@
         </div>
     </section>
     <footer>
+        <!-- Outcomes that determine winner in game -->
+        <!-- Game originates from 'Big Bang Theory' series -->
         <h3>Rules</h3>
         <p>Scissors cut Paper | Paper covers Rock | Rock crushes Lizard | Lizard poisons Spock | Spock smashes Scissors | Scissors decapitates Lizard</p>
         <p>Lizard eats Paper | Paper disproves Spock | Spock vaporizes Rock and as it always has, Rock crushes Scissors</p>
     </footer>
     <script src="./assets/js/script.js"></script>
-    
 </body>
 </html>
