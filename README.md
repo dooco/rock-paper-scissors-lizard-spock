@@ -6,28 +6,36 @@ The website is designed to be responsive by using simple css paramaters.
 
 
 # User Experience (UX)
+
+## Strategy Plane
+
+Website was created to showcase my knowledge of HTML, CSS & JavaScript and to provide users with some fun in the form of an online Rock, Paper, Scissors, Lizard, Spock game created with JavaScript.
+
 ## User stories
+
 ### First Time Visitor Goals
 As a First Time Visitor, I want to easily understand the main purpose of the game.
 As a First Time Visitor, I want to be able to easily navigate the site to play the game.
-As a First Time Visitor, I want to see what the elements of the game are and what are the rules of the game.
+As a First Time Visitor, I want to be able to play game on any device.
 
 ### Returning Visitor Goals
 As a Returning Visitor, I want to be able to play game at ease.
 As a Returning Visitor, I want to compete with computer in simple game of chance.
-As a Returning Visitor, I want to familiarise myself with rules oft the game.
+As a Returning Visitor, I want to familiarise myself with rules of the game.
 
 ### Frequent User Goals
-As a Frequent User, I want to continue to enjoy the game.
+As a Frequent User, I want to continue to enjoy the game and share with family and friends.
 As a Frequent User, I want to see if I can win against the computer.
 As a Frequent User, I want to be able to reset game and start a new game.
 
 # Design
 ## Colour Scheme
-The two main colours used are blueviolet, lightblue and lightcoral.
+The three main colours used in the game are: blueviolet, lightblue and lightcoral.
+![colour pallet](./assets/images/readme_images/colour_pallet.png)
 
 ## Typography
-The DynaPuff font is the main font used throughout the website with cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. DynaPuff is a quirky font used frequently in children's games.
+The DynaPuff font is the main font used throughout the website with cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. DynaPuff is a quirky font used frequently in children's games / websites.
+![DynaPuff google font](./assets/images/readme_images/google_font_dynapuff.png)
 
 ### Imagery
 Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.

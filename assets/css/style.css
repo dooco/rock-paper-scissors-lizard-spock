@@ -19,6 +19,9 @@ body {
     margin: 0;
 }
 
+h1, h2 {
+    font-size: 1.5rem;
+}
 /* Header & Footer */
 
 header {
@@ -43,6 +46,9 @@ footer {
 img {
     width: 100%;
     border-radius: 5px;
+}
+i {
+    cursor: pointer;
 }
 
 /* Game area */
