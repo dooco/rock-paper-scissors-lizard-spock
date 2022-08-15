@@ -66,5 +66,12 @@ function updateScores(result) {
 function resetAll() {
     playerScore.textContent = 0;
     computerScore.textContent = 0;
+
     messages.textContent = "New Game";
+
+    playerImage.src = `assets/images/rps.png`;
+    playerImage.alt = 'rock paper scissors lizard spock';
+
+    computerImage.src = `assets/images/rps.png`;
+    computerImage.alt = 'rock paper scissors lizard spock';
 }
