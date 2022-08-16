@@ -49,8 +49,8 @@ updateScores(result);
  }
  /** Check winner -  first check if there is a tie and then 
   * compare player selection to computer selection using
-  * indexOf setChoice array
-  * Credit: github.com/JacintoDesign/spock-rock-game 
+  * indexOf on hash table of objects
+  * Credit: https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
   */
  function checkWinner(computerSelection, playerSelection) {
     if (computerSelection === playerSelection) {
