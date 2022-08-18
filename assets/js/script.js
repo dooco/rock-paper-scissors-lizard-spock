@@ -31,14 +31,15 @@
  /**
   * Main game function - accepts one paramater: data-choice value of selected button
   */
+ resetAll();
  function playGame(playerChoice) {
     
-    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+    playerImage.src = `./assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
 
 let computerChoice = Math.floor(Math.random() * 5);
 
-computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+computerImage.src = `./assets/images/${choices[computerChoice]}.png`;
 computerImage.alt = choices[computerChoice];
 let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 
@@ -46,7 +47,6 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
  * updates scrore for player and computer and updates messages
  */
 
-updateScores(result);
  }
  /** Check winner -  first check if there is a tie and then 
   * compare player selection to computer selection using
@@ -87,4 +87,5 @@ function resetAll() {
 
 function myPopup() {
     popup.classList.toggle("show");
+
 }

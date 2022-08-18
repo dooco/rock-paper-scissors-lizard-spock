@@ -98,10 +98,10 @@ The two display areas display player and computer choice and score. After game s
 
 ### Footer (Rules)
 
-The game Rock, Paper, Scissors, Lizard, Spock is an extension of the  Rock, Paper, Scissors game as engineered by Sheldon in the Big Bang television series. The rules are displayed in the fixed footer area of the game, allowing player to familiarise themselves to the rules.
+The game Rock, Paper, Scissors, Lizard, Spock is an extension of the  Rock, Paper, Scissors game as engineered by Sheldon in the Big Bang television series. To view  rules, click on footer and rules will appear in a popup which can be collapsed by clicking on popup.
 
 
-![rules](./assets/images/readme_images/rules.png)
+![rules](./assets/images/readme_images/Rules-popup.png)
 
 
 ## Technologies Used
@@ -159,39 +159,42 @@ JavaScript code was tested by passing code through jshint.com
 
 
 
-
 19 warnings
 
 Warnings predominantly relate to variables and their interaction with different version of browsers and are not significant.
 
 No errors were noted.
 
-### Testing User Stories from User Experience (UX) Section
+Lighthouse analysis
+
+![Mobile lighthouse result](./assets/images/readme_images/lighthouse-mobile.png)
+
+![Desktop lighthouse result](./assets/images/readme_images/lighthouse-desktop.png)
 
 
 
 
 ### Further Testing
 
-The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
-The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
-Friends and family members were asked to review the site and point out any bugs or issues.
+- The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+- A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
+- Friends and family members were asked to review the site and point out any bugs or issues.
 
 ## Known Bugs
 
-On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-A white gap can be seen to the right of the footer and navigation bar as a result.
-On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+On some mobile devices the computer display area is larger than the player display area.The footer can overlap player adn computer display areas on small devices.
+.
 # Deployment
-## GitHub Pages
-The project was deployed to GitHub Pages using the following steps...
 
-Log in to GitHub and locate the GitHub Repository
-At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-Scroll down the Settings page until you locate the "GitHub Pages" Section.
-Under "Source", click the dropdown called "None" and select "Master Branch".
-The page will automatically refresh.
+## GitHub Pages
+The project was deployed to GitHub Pages using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository
+- At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+- Scroll down the Settings page until you locate the "GitHub Pages" Section.
+Under "Source", click the dropdown called "None" and select "Main".
+- The page will refresh after a while.
 Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
 
 
