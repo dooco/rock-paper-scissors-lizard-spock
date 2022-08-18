@@ -124,6 +124,8 @@ Font Awesome was used in the game to add an icon for game reset.
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - GitHub:
 GitHub is used to store the projects code after being pushed from Git.
+- VS Code:
+Integrated Development Environment used to develop the website.
 
 - Balsamiq:
 Balsamiq was used to create the wireframes during the design process.
@@ -131,28 +133,33 @@ Balsamiq was used to create the wireframes during the design process.
 - Code Institute's Student template for gitpod:
 Preinstalled tools for students to use and create projects.
 
+- Google Chrome Developer Tool:
+Used to test and debug site. 
+
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 W3C Markup Validator - Results
+
 ![W3C Validator](./assets/images/readme_images/html-validator.png)
+
 
 W3C CSS Validator - Results
 
-jshint.com
+![W3C CSS Validator](./assets/images/readme_images/css-validator.png)
 
-There are 4 functions in this file.
 
-Function with the largest signature take 2 arguments, while the median is 0.5.
+JavaScript code was tested by passing code through jshint.com
 
-Largest function has 9 statements in it, while the median is 7.
+![jshint results](./assets/images/readme_images/jshint-validator.png)
 
-The most complex function has a cyclomatic complexity value of 3 while the median is 1.
+
+
 
 19 warnings
 
-Warnings relate to 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+Warnings predominantly relate to variables and their interaction with different version of browsers and are not significant.
 
 No errors were noted.
 
@@ -162,11 +169,14 @@ No errors were noted.
 
 
 ### Further Testing
+
 The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
-A large amount of testing was done to ensure that all pages were linking correctly.
-Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
+Friends and family members were asked to review the site and point out any bugs or issues.
+
 ## Known Bugs
+
 On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
 A white gap can be seen to the right of the footer and navigation bar as a result.
 On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
@@ -183,20 +193,27 @@ Scroll back down through the page to locate the now published site link in the "
 
 
 # Credits
-## Code
-The html, css and javascript code was copied from Code Institute's Portfolio Project 2 Scope video, modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
 
-Javascript hash table: https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript
+## Code
+
+The Code Institute's Portfolio Project 2 Scope video provided the underling html, css and javascript code for the game. This was modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
+
+After researching various strategies to implement rules of game through JavaScript a solution was found on stack overflow.
+
+Hash table: [Javascript hash table:](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript)
 
 
 ## Content
+
 All content was written by the developer.
 
-Psychological properties of colours text in the README.md
 
 ## Media
+
 All Images were created by the developer.
+
 ## Acknowledgements
+
 My Mentor for continuous helpful feedback.
 
 Tutor support at Code Institute for their support.
