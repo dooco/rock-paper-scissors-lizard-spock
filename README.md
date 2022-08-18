@@ -2,8 +2,8 @@ View the live project: Rock Paper Scissors Lizard Spock [here](https://dooco.git
 
 # Rock, Paper, Scissors, Lizard, Spock
 
-This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javascript learned on the javascript essentials module this website was developed to demonstrate students knowledge and ability to implement javascript code in a simple game.
-As well as displaying competence in writing code in javascript the website is designed using principles of user experience design, html and css to be responsive.
+This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javaScript learned on the javaScript essentials module this website was developed to demonstrate students knowledge and ability to implement javaScript code in a simple game.
+As well as displaying competence in writing code in javaScript the website is designed using principles of user experience design, html and css to be responsive.
 
 
 
@@ -13,7 +13,7 @@ As well as displaying competence in writing code in javascript the website is de
 
 ## Strategy Plane
 
-Website was created to showcase knowledge of HTML, CSS & JavaScript and to provide users with some fun in the form of an online Rock, Paper, Scissors, Lizard, Spock game created with JavaScript.
+Website was created to showcase knowledge of HTML, CSS and JavaScript and to provide users with some fun in the form of an online Rock, Paper, Scissors, Lizard, Spock game created with JavaScript.
 
 ## User stories
 
@@ -40,7 +40,7 @@ Website was created to showcase knowledge of HTML, CSS & JavaScript and to provi
 
 ## Colour Scheme
 
-The three main colours used in the game are: blueviolet, lightblue and lightcoral  and these colours were inspired by the Code Institute’s case study video. Colour pallet was created by tool on mycolor.space website.
+The three main colours used in the game are: blueviolet (used as background colour), lightblue (Player background colour) and lightcoral (computer background colour) inspired by the Code Institute’s case study video. Colour pallet was created by tool on mycolor.space website.
 
 ![colour pallet](./assets/images/readme_images/colour_pallet.png)
 
@@ -91,7 +91,7 @@ Message area displays information to the user such as 'New Game', 'Player Wins',
 
 ### Player and Computer Image Selection and Score
 
-The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javascript functions of game deciding which score should be incremented. Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas.
+The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javaScript functions of game deciding which score should be incremented. Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas.
 
 
 ![Player and Computer Image Selection and Score](./assets/images/readme_images/player-computer-selection-score.png)
@@ -120,7 +120,7 @@ Hover.css was used on the Player selection buttons in the player choice selectio
 Google fonts were used to import the 'DynaPuff' font into the header section of index.html which is used throughout the project by referencing font family in style.css file.
 - Font Awesome:
 Font Awesome was used in the game to add an icon for game reset.
-- Git
+- Git:
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 - GitHub:
 GitHub is used to store the projects code after being pushed from Git.
@@ -135,6 +135,9 @@ Preinstalled tools for students to use and create projects.
 
 - Google Chrome Developer Tool:
 Used to test and debug site. 
+
+-  mycolor.space: 
+Used to create colour pallet.
 
 ## Testing
 
@@ -196,11 +199,11 @@ Scroll back down through the page to locate the now published site link in the "
 
 ## Code
 
-The Code Institute's Portfolio Project 2 Scope video provided the underling html, css and javascript code for the game. This was modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
+The Code Institute's Portfolio Project 2 Scope video provided the underling html, css and javaScript code for the game. This was modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
 
 After researching various strategies to implement rules of game through JavaScript a solution was found on stack overflow.
 
-Hash table: [Javascript hash table:](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javascript)
+Hash table: [JavaScript hash table:](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javaScript)
 
 
 ## Content
