@@ -9,6 +9,7 @@
  const playerImage = document.getElementById('player-image');
  const computerImage = document.getElementById('computer-image');
  const messages =document.getElementById('messages');
+ var popup = document.getElementById("myPopup");
  messages.innerText = 'New Game';
  const choices = ["rock","paper","scissors","lizard","spock"];
  const setChoice = {
@@ -82,4 +83,8 @@ function resetAll() {
 
     computerImage.src = `assets/images/rps.png`;
     computerImage.alt = 'rock paper scissors lizard spock';
+}
+
+function myPopup() {
+    popup.classList.toggle("show");
 }
