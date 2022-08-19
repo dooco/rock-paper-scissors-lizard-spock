@@ -2,8 +2,9 @@ View the live project: Rock Paper Scissors Lizard Spock [here](https://dooco.git
 
 # Rock, Paper, Scissors, Lizard, Spock
 
-This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javaScript learned on the javaScript essentials module this website was developed to demonstrate students knowledge and ability to implement javaScript code in a simple game.
-As well as displaying competence in writing code in javaScript the website is designed using principles of user experience design, html and css to be responsive.
+This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javaScript learned on the javaScript essentials and 'Love Maths' walkthrough modules this website was developed to demonstrate students knowledge and ability to implement javaScript code in a simple game.
+As well as displaying competence in writing code in javaScript the website is designed using principles of user experience design, html and css, and is designed to be responsive using basic css.
+The game Rock, Paper, Scissors, Lizard, Spock is an extension of the Rock, Paper, Scissors game and is credited to Sheldon of the Big Bang television series.
 
 
 
@@ -46,7 +47,7 @@ The three main colours used in the game are: blueviolet (used as background colo
 
 ## Typography
 
-The DynaPuff font is the main font used throughout the website with cursive as the fallback font in case for any reason the font isn't being imported into the site correctly. DynaPuff is a quirky font used frequently in children's games / websites.
+The 'DynaPuff' font is the main font used throughout the website with 'cursive' as the fallback font in case for any reason the font isn't being imported into the site correctly. DynaPuff is a quirky font used frequently in children's games / websites.
 
 ![DynaPuff google font](./assets/images/readme_images/google_font_dynapuff.png)
 
@@ -56,7 +57,7 @@ Simple emoji characters are used to represent the elements of the game. The head
 
 The game section of the site simply displays five buttons with text to identify the elements that the player can choose from. 
 
-Two display areas display player choice and score and the other display area the computer choice and score. Again simple enlarged emoji representing the player choice and computer choice are displayed in their respective display areas.
+Two display areas displays player choice and score and the other display area the computer choice and score. Again simple enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas.
 
 ### Wireframes
 
@@ -98,7 +99,7 @@ The two display areas display player and computer choice and score. After game s
 
 ### Footer (Rules)
 
-The game Rock, Paper, Scissors, Lizard, Spock is an extension of the  Rock, Paper, Scissors game as engineered by Sheldon in the Big Bang television series. To view  rules, click on footer and rules will appear in a popup which can be collapsed by clicking on popup.
+The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view  rules, click on footer and rules will appear in a popup which can be collapsed again by clicking on popup.
 
 
 ![rules](./assets/images/readme_images/Rules-popup.png)
@@ -141,19 +142,23 @@ Used to create colour pallet.
 
 ## Testing
 
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+The W3C Markup Validator and W3C CSS Validator services were used to validate the project to ensure there were no syntax errors. The jshint JavaScript test utility was uses to check for jacaScript errors in the project. The results are shown below.  
 
-W3C Markup Validator - Results
+- W3C Markup Validator - Results
 
 ![W3C Validator](./assets/images/readme_images/html-validator.png)
 
+Validator indicated that no errors were observed.
 
-W3C CSS Validator - Results
+
+- W3C CSS Validator - Results
 
 ![W3C CSS Validator](./assets/images/readme_images/css-validator.png)
 
+Validator indicated that no errors were observed.
 
-JavaScript code was tested by passing code through jshint.com
+
+- JavaScript code was tested by passing code through jshint.com
 
 ![jshint results](./assets/images/readme_images/jshint-validator.png)
 
@@ -165,9 +170,16 @@ Warnings predominantly relate to variables and their interaction with different 
 
 No errors were noted.
 
-Lighthouse analysis
+- Lighthouse analysis
+
+Lighthouse analysis scores quality in five categories; performance, best practice, SEO and qualification as a Progressive Web Application. The analysis was performed on the website on an incognito browser window (as suggested by Lighthouse) for bot mobile and desktop. 
+
+Lighthouse mobile results:
 
 ![Mobile lighthouse result](./assets/images/readme_images/lighthouse-mobile.png)
+
+
+Lighthouse desktop results:
 
 ![Desktop lighthouse result](./assets/images/readme_images/lighthouse-desktop.png)
 
@@ -176,15 +188,22 @@ Lighthouse analysis
 
 ### Further Testing
 
-- The Website was tested on Google Chrome, Internet Explorer and Safari browsers.
-- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
+- The Website was tested on Google Chrome, Firefox Developer and Safari browsers. Game worked as expected except for when screen width went below 540px where the computer display area appeared longer than player s=display area.
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7 and iPhoneX.
 - A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
 - Friends and family members were asked to review the site and point out any bugs or issues.
 
 ## Known Bugs
 
-On some mobile devices the computer display area is larger than the player display area.The footer can overlap player adn computer display areas on small devices.
-.
+On some mobile devices the computer display area is larger than the player display area. 
+
+## Limitations and further improvements
+
+- Further improvements in emoji images whereby the pink background would be replaced with the background colour of the display area would improve contrast and add to visual experience.
+
+- Log in function where user can log their username and game would keep a record of scores. However there may be limitations on recording scores when game is finished and data is lost.
+
+
 # Deployment
 
 ## GitHub Pages
@@ -208,6 +227,8 @@ After researching various strategies to implement rules of game through JavaScri
 
 Hash table: [JavaScript hash table:](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javaScript)
 
+Popup code credited to W3Schooles.com [w3schools.com](https://w3schools.com)
+
 
 ## Content
 
@@ -220,7 +241,7 @@ All Images were created by the developer.
 
 ## Acknowledgements
 
-My Mentor for continuous helpful feedback.
+My Mentor, Ronan, for continuous helpful feedback.
 
 Tutor support at Code Institute for their support.
 
