@@ -1,5 +1,8 @@
 View the live project: Rock Paper Scissors Lizard Spock [here](https://dooco.github.io/rock-paper-scissors-lizard-spock/)
 
+![amiresponsive](./assets/images/readme_images/responsive.png)
+
+
 # Rock, Paper, Scissors, Lizard, Spock
 
 This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javaScript learned on the javaScript essentials and 'Love Maths' walkthrough modules this website was developed to demonstrate students knowledge and ability to implement javaScript code in a simple game.
