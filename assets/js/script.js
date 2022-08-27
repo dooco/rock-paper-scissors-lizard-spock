@@ -123,10 +123,10 @@ function myPopup() {
     popup.classList.toggle("show");
 
 }
-// document.addEventListener("DOMContentLoaded", function() {
-//     setTimeout(function() {
-//      // run your open popup function after 5 sec = 5000
-//      console.log("Set timeout function called");
-//      myPopup();
-//     }, 5000)
-//    });
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+     // run your open popup function after 5 sec = 5000
+     console.log("Set timeout function called");
+     myPopup();
+    }, 2000)
+   });
