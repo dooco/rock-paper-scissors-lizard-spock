@@ -9,6 +9,8 @@
  const playerImage = document.getElementById('player-image');
  const computerImage = document.getElementById('computer-image');
  const messages =document.getElementById('messages');
+ const playerSetScore = document.getElementById('player-set-score');
+ const computerSetScore = document.getElementById('computer-set-score');
  var popup = document.getElementById("myPopup");
  messages.innerText = 'New Game';
  const choices = ["rock","paper","scissors","lizard","spock"];
@@ -67,7 +69,17 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
             computerScore.textContent = ++computerScore.textContent;
         }
     }
- }
+    if (playerScore.textContent === '5') {
+        playerSetScore.textContent = ++playerSetScore.textContent;
+        resetGame("Player Wins Set");
+    } 
+    if (computerScore.textContent === '5') {
+        computerSetScore.textContent = ++computerSetScore.textContent;
+        resetGame("Computer Wins Set");
+
+    }
+}
+ 
 /**
  * Resets player and computer score variables, message and resets player and 
  * computer images to default start images
@@ -75,7 +87,8 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
 function resetAll() {
     playerScore.textContent = 0;
     computerScore.textContent = 0;
-
+    playerSetScore.textContent = 0;
+    computerSetScore.textContent = 0;
     messages.textContent = "New Game";
 
     playerImage.src = `assets/images/rps.png`;
@@ -83,6 +96,18 @@ function resetAll() {
 
     computerImage.src = `assets/images/rps.png`;
     computerImage.alt = 'rock paper scissors lizard spock';
+}
+function resetGame(whoWins) {
+    playerScore.textContent = 0;
+    computerScore.textContent = 0;
+
+    messages.textContent = whoWins;
+
+    // playerImage.src = `assets/images/rps.png`;
+    // playerImage.alt = 'rock paper scissors lizard spock';
+
+    // computerImage.src = `assets/images/rps.png`;
+    // computerImage.alt = 'rock paper scissors lizard spock';
 }
 
 function myPopup() {
