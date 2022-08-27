@@ -69,14 +69,29 @@ let result = checkWinner(choices[computerChoice], choices[playerChoice]);
             computerScore.textContent = ++computerScore.textContent;
         }
     }
-    if (playerScore.textContent === '5') {
+    if (playerScore.textContent === '7') {
         playerSetScore.textContent = ++playerSetScore.textContent;
         resetGame("Player Wins Set");
     } 
-    if (computerScore.textContent === '5') {
+    if (computerScore.textContent === '7') {
         computerSetScore.textContent = ++computerSetScore.textContent;
-        resetGame("Computer Wins Set");
+        resetGame("Player Looses Set");
+    }
+    if (playerSetScore.textContent === '5') {
+        playerImage.src = `assets/images/happy.png`;
+        playerImage.alt = 'happy face';
 
+        computerImage.src = `assets/images/happy.png`;
+        computerImage.alt = 'happy face';
+        resetGame("Player Wins Game");
+    } 
+    if (computerSetScore.textContent === '5') {
+        playerImage.src = `assets/images/sad.png`;
+        playerImage.alt = 'sad face';
+
+        computerImage.src = `assets/images/sad.png`;
+        computerImage.alt = 'sad face';
+        resetGame("Player Looses Game");
     }
 }
  
@@ -102,12 +117,6 @@ function resetGame(whoWins) {
     computerScore.textContent = 0;
 
     messages.textContent = whoWins;
-
-    // playerImage.src = `assets/images/rps.png`;
-    // playerImage.alt = 'rock paper scissors lizard spock';
-
-    // computerImage.src = `assets/images/rps.png`;
-    // computerImage.alt = 'rock paper scissors lizard spock';
 }
 
 function myPopup() {
