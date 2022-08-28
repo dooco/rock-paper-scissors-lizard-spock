@@ -26,6 +26,18 @@
             <button aria-label="Lizard" data-choice="3" class="control">Lizard</button>
             <button aria-label="Spock" data-choice="4" class="control">Spock</button>
         </div>
+        <!-- Set Player's name -->
+        <div onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Set Player Name</div>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content">
+                <div class="container">
+                    <h1>Set User Name</h1>
+                    <p>Please Enter your User Name below</p>
+                    <label for="user-name"><b>User Name:</b></label>
+                </div>
+            </form>
+        </div>
         <!-- Message area displays whether player wins or loses and New Game on reset -->
         <div id="messages"></div>  
         <!-- Reset game calls JS reset function -->
@@ -46,6 +58,7 @@
         </div>
     </section>
     <footer>
+        
         <!-- Outcomes that determine winner in game -->
         <!-- Game originates from 'Big Bang Theory' series -->
         <!-- Popup code from w3schools.com -->
