@@ -182,7 +182,7 @@ i {
     to {opacity:1 ;}
   }
   /* Input field full width */
-  input[type=text] {
+  /* input[type=text] {
     width: 100%;
     padding: 1rem;
     margin: 5px 0 22px 0;
@@ -191,31 +191,31 @@ i {
     background: #f1f1f1;
   }
   /* Add background colou when input gets focus */
-  input[type=text]:focus {
+  /* input[type=text]:focus {
     background-color: #ddd;
     outline: none;
-  }
+  } */
   /* style for buttons */
-  button {
+  /* button {
     /* background-color: #04aa6d;
     color: white; */
     /* padding: 14px 20px;
     margin: 4px 0; */
-    border: none;
+    /* border: none;
     cursor: pointer;
     width: 50%;
     opacity: 0.8;
   }
   button:hover {
     opacity: 1;
-  }
-  .sign-up-btn {
+  } */
+  /* .sign-up-btn {
     float: left;
     width: 50%;
-  }
-  .container {
+  } */
+  /* .container {
     padding: 1rem;
-  }
+  } */
   /* .modal {
     display: none;
     position: fixed;

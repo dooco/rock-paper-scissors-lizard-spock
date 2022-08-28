@@ -11,9 +11,8 @@
  const messages =document.getElementById('messages');
  const playerSetScore = document.getElementById('player-set-score');
  const computerSetScore = document.getElementById('computer-set-score');
- const playerName = document.getElementById('player-name');
  var popup = document.getElementById("myPopup");
- messages.innerText = 'New Game';
+//  messages.textContent = "New Game";
  const choices = ["rock","paper","scissors","lizard","spock"];
  const setChoice = {
     rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
@@ -112,6 +111,7 @@ function resetAll() {
 
     computerImage.src = `assets/images/rps.png`;
     computerImage.alt = 'rock paper scissors lizard spock';
+
 }
 function resetGame(whoWins) {
     playerScore.textContent = 0;
@@ -124,13 +124,10 @@ function myPopup() {
     popup.classList.toggle("show");
 
 }
-function setPlayerName(username) {
-    playerName.textContent = 'username';
-    console.log(playerName);
-}
+
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
-     // run your open popup function after 5 sec = 5000
+     // run your open popup function after 2 sec = 2000
      console.log("Set timeout function called");
      myPopup();
     }, 2000)
