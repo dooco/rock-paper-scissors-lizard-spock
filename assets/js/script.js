@@ -11,6 +11,7 @@
  const messages =document.getElementById('messages');
  const playerSetScore = document.getElementById('player-set-score');
  const computerSetScore = document.getElementById('computer-set-score');
+ const playerName = document.getElementById('player-name');
  var popup = document.getElementById("myPopup");
  messages.innerText = 'New Game';
  const choices = ["rock","paper","scissors","lizard","spock"];
@@ -122,6 +123,10 @@ function resetGame(whoWins) {
 function myPopup() {
     popup.classList.toggle("show");
 
+}
+function setPlayerName(username) {
+    playerName.textContent = 'username';
+    console.log(playerName);
 }
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
