@@ -12,7 +12,7 @@
  const playerSetScore = document.getElementById('player-set-score');
  const computerSetScore = document.getElementById('computer-set-score');
  var popup = document.getElementById("myPopup");
-//  messages.textContent = "New Game";
+
  const choices = ["rock","paper","scissors","lizard","spock"];
  const setChoice = {
     rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },

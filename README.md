@@ -95,17 +95,17 @@ Message area displays information to the user such as 'New Game', 'Player Wins',
 
 ### Player and Computer Image Selection and Score
 
-The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javaScript functions of game deciding which score should be incremented. Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas.
+The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javaScript functions, as per rules of game, deciding which score should be incremented (or not if its a tie). Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas. After either player reached a score of 7 then that player wins the set and set score is registered under emoji image. Game scores are reset to zero and the game proceeds until either player reaches 7 again and set score is updated and new game starts. The first to 5 sets wins the match and reaches game over - a smily or sad face emoji is displayed in both player and computer display areas.
 
 
 ![Player and Computer Image Selection and Score](./assets/images/readme_images/player-computer-selection-score.png)
 
 ### Footer (Rules)
 
-The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view  rules, click on footer and rules will appear in a popup which can be collapsed again by clicking on popup.
+The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view  rules, click on footer and rules will appear in a popup which can be collapsed again by clicking on popup. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and how first to seven games wins the set and the first to win five sets wins the match.
+On loading the game for the first time or on reset the rules popup starts up 2 seconds when page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on footer or popup.
 
-
-![rules](./assets/images/readme_images/Rules-popup.png)
+![rules](./assets/images/readme_images/rules-popup.png)
 
 
 ## Technologies Used
@@ -120,14 +120,19 @@ The rules of the game need to be available to player but take up a lot of screen
 
 - Hover.css:
 Hover.css was used on the Player selection buttons in the player choice selection area to enlarge button while being hovered over.
+
 - Google Fonts:
 Google fonts were used to import the 'DynaPuff' font into the header section of index.html which is used throughout the project by referencing font family in style.css file.
+
 - Font Awesome:
 Font Awesome was used in the game to add an icon for game reset.
+
 - Git:
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+
 - GitHub:
 GitHub is used to store the projects code after being pushed from Git.
+
 - VS Code:
 Integrated Development Environment used to develop the website.
 
@@ -142,6 +147,10 @@ Used to test and debug site.
 
 -  mycolor.space: 
 Used to create colour pallet.
+
+- Canva graphic designer platform
+Used to remove background on images and resize images.
+
 
 ## Testing
 
@@ -161,15 +170,13 @@ Validator indicated that no errors were observed.
 Validator indicated that no errors were observed.
 
 
-- JavaScript code was tested by passing code through jshint.com
+- JavaScript code was passed through jshint.com evaluation tool.
 
 ![jshint results](./assets/images/readme_images/jshint-validator.png)
 
 
 
-19 warnings
-
-Warnings predominantly relate to variables and their interaction with different version of browsers and are not significant.
+- There were 26 warnings predominantly related to variables and their interaction with different version of browsers and are not significant.
 
 No errors were noted.
 
