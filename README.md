@@ -154,6 +154,15 @@ Used to remove background on images and resize images.
 
 ## Testing
 
+### Game Logic Test
+
+Testing to maintain integrity of game rules entailed testing player’s five selections against the computer’s selections. As user controls players choice the test is conducted by moving through the five game elements and observing outcome compared to computer’s choice. As the computer’s choice is random testing has to run through as many iterations of the game so that all five game elements are tested against player’s choice. 
+After completing the test for first player game element (rock) then testing proceeds to second player game element (paper) to that of computer’s random choice and continues until all five of player’s game choice elements are compared to that of computer’s five game elements. 
+As can be seen from the chart below there are 25 possible outcomes and applying rules of game (column two) the outcomes proved true for each test. 
+
+![Game Logic Test](/assets/images/readme_images/game-logic-test.png)
+
+Testing 
 The W3C Markup Validator and W3C CSS Validator services were used to validate the project to ensure there were no syntax errors. The jshint JavaScript test utility was uses to check for jacaScript errors in the project. The results are shown below.  
 
 - W3C Markup Validator - Results
