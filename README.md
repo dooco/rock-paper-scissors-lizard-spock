@@ -154,7 +154,9 @@ Used to remove background on images and resize images.
 
 ## Testing
 
+
 ### Game Logic Test
+
 
 Testing to maintain integrity of game rules entailed testing player’s five selections against the computer’s selections. As user controls players choice the test is conducted by moving through the five game elements and observing outcome compared to computer’s choice. As the computer’s choice is random testing has to run through as many iterations of the game so that all five game elements are tested against player’s choice. 
 After completing the test for first player game element (rock) then testing proceeds to second player game element (paper) to that of computer’s random choice and continues until all five of player’s game choice elements are compared to that of computer’s five game elements. 
@@ -212,28 +214,46 @@ Lighthouse desktop results:
 - A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
 - Friends and family members were asked to review the site and point out any bugs or issues.
 
+
 ## Known Bugs
 
-On some mobile devices the computer display area is larger than the player display area. 
+On some mobile devices the computer display area is larger than the player display area. This is attributed to "Computer score:" spilling over onto two lines and pushing image down.
 
 ## Limitations and further improvements
 
-- Further improvements in emoji images whereby the pink background would be replaced with the background colour of the display area would improve contrast and add to visual experience.
+- For further improvements the introduction of animation of emogi images would highlight a winning event and would add to visual experience.
 
 - Log in function where user can log their username and game would keep a record of scores. However there may be limitations on recording scores when game is finished and data is lost.
 
 
 # Deployment
 
-## GitHub Pages
+## Deploying site
+
 The project was deployed to GitHub Pages using the following steps:
 
 - Log in to GitHub and locate the GitHub Repository
+
 - At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+
 - Scroll down the Settings page until you locate the "GitHub Pages" Section.
 Under "Source", click the dropdown called "None" and select "Main".
+
 - The page will refresh after a while.
-Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+- Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+- Click on this link will open deployed site on a new default browsre tab.
+
+## Forking the GitHub Repository
+
+To make a copy of the original repository on GitHub account so as to make changes without affecting the original, use the following steps to fork the GitHub Repository:
+
+- Log in to GitHub, click on Repositories and locate the required Repository.
+
+- At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+- You should now have a copy of the original repository in your GitHub account.
 
 
 # Credits
