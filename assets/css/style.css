@@ -30,6 +30,14 @@ h1, h2 {
 header {
     text-align: center;
     height: 3.125rem;
+    padding: 2rem 0;
+}
+.display-area {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
 footer {
@@ -67,11 +75,12 @@ i {
     margin-top: 1%;
     margin-bottom: 1%;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 
 .control {
-    display: inline-block;
+    /* display: inline-block; */
     margin: .125rem;
     width: 5rem;
     height: 2.5rem;
@@ -94,37 +103,37 @@ i {
 
 .player {
     background-color: lightblue;
-    float: left;
-    width: 45%;
+    /* float: left; */
+    /* width: 45%; */
     border-radius: 4px;
 
 }
 
 #player-image {
-    width: 45%;
+    /* width: 45%; */
 }
 
 /* Computer positioned on right */
 
 .computer {
     background-color: lightcoral;
-    float: right;
-    width: 45%;
+    /* float: right; */
+    /* width: 45%; */
     border-radius: 4px;
 }
 #computer-image {
-    width: 45%;
+    /* width: 45%; */
 }
 .player-set {
     background-color: lightcoral;
-    float: left;
-    width: 45%;
+    /* float: left; */
+    /* width: 45%; */
     border-radius: 4px;
 }
 .computer-set {
     background-color: lightblue;
-    float: right;
-    width: 45%;
+    /* float: right; */
+    /* width: 45%; */
     border-radius: 4px;
 }
 
