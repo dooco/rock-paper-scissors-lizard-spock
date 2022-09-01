@@ -44,6 +44,8 @@ header {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     margin-top: auto;
     width: 100%;
     left: 0;
@@ -54,6 +56,19 @@ footer {
     text-align: center;
     color: #fff;
     background-color: black;
+    
+}
+footer button {
+  margin: .125rem;
+  max-width: 10rem;
+  height: 2.5rem;
+  font-weight: 900;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 100ms;
+}
+.footer > button:hover {
+  transform: scale(1.2);
 }
  /* style images */
 
@@ -72,7 +87,7 @@ i {
 /* Game area */
 
 .game-area {
-    width: 75%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
@@ -83,7 +98,6 @@ i {
 
 
 .control {
-    /* display: inline-block; */
     margin: .125rem;
     width: 5rem;
     height: 2.5rem;
@@ -106,37 +120,33 @@ i {
 
 .player {
     background-color: lightblue;
-    /* float: left; */
-    /* width: 45%; */
     border-radius: 4px;
 
 }
 
 #player-image {
-    /* width: 45%; */
+    width: 100%;
 }
 
 /* Computer positioned on right */
 
 .computer {
     background-color: lightcoral;
-    /* float: right; */
-    /* width: 45%; */
     border-radius: 4px;
 }
 #computer-image {
-    /* width: 45%; */
+    width: 100%;
 }
 .player-set {
     background-color: lightcoral;
-    /* float: left; */
-    /* width: 45%; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 4px;
 }
 .computer-set {
     background-color: lightblue;
-    /* float: right; */
-    /* width: 45%; */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     border-radius: 4px;
 }
 
