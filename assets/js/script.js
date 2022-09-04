@@ -11,7 +11,7 @@
  const messages =document.getElementById('messages');
  const playerSetScore = document.getElementById('player-set-score');
  const computerSetScore = document.getElementById('computer-set-score');
- var popup = document.getElementById("myPopup");
+ 
 
  const choices = ["rock","paper","scissors","lizard","spock"];
  const setChoice = {
@@ -127,9 +127,8 @@ function myPopup() {
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
-     // run your open popup function after 2 sec = 2000
-     console.log("Set timeout function called");
-     myPopup();
+     // run your open modal display function after 2 sec = 2000
+     modal.style.display = "block";
     }, 2000)
    });
    // Get the modal
