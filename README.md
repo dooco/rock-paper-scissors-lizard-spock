@@ -1,14 +1,62 @@
+
+# Table of Contents
+
+  * [Rock, Paper, Scissors, Lizard, Spock](#rock--paper--scissors--lizard--spock)
+  * [User Experience (UX)](#user-experience--ux-)
+  * [Strategy Plane](#strategy-plane)
+  * [User stories](#user-stories)
+    + [First Time Visitor Goals](#first-time-visitor-goals)
+    + [Returning Visitor Goals](#returning-visitor-goals)
+    + [Frequent User Goals](#frequent-user-goals)
+- [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+    + [Imagery](#imagery)
+    + [Wireframes](#wireframes)
+  * [![Wireframe](./assets/images/readme_images/Rock-Paper-Scissors-Lizard-Spock.png)](#--wireframe---assets-images-readme-images-rock-paper-scissors-lizard-spockpng-)
+- [Features](#features)
+  * [Structure](#structure)
+    + [Player Selection](#player-selection)
+    + [Message](#message)
+    + [Player and Computer Image Selection and Score](#player-and-computer-image-selection-and-score)
+    + [Footer](#footer)
+  * [![footer](./assets/images/readme_images/footer.png)](#--footer---assets-images-readme-images-footerpng-)
+  * [Technologies Used](#technologies-used)
+    + [Languages Used](#languages-used)
+    + [Frameworks, Libraries & Programs Used](#frameworks--libraries---programs-used)
+  * [Testing](#testing)
+    + [Game Logic Test](#game-logic-test)
+    + [Testing code integrity](#testing-code-integrity)
+    + [Further Testing](#further-testing)
+  * [Known Bugs](#known-bugs)
+  * [Limitations and further improvements](#limitations-and-further-improvements)
+- [Deployment](#deployment)
+  * [Deploying site](#deploying-site)
+  * [Forking the GitHub Repository](#forking-the-github-repository)
+- [Credits](#credits)
+  * [Code](#code)
+  * [Content](#content)
+  * [Media](#media)
+  * [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
+
+# Rock, Paper, Scissors, Lizard, Spock
+
 View the live project: Rock Paper Scissors Lizard Spock [here](https://dooco.github.io/rock-paper-scissors-lizard-spock/)
 
 ![amiresponsive](./assets/images/readme_images/responsive.png)
 
 
-# Rock, Paper, Scissors, Lizard, Spock
+
 
 This website forms part assignment for the Code Institute’s Full Stack Developer course - personal portfolio two. Using principles of javaScript learned on the javaScript essentials and 'Love Maths' walkthrough modules this website was developed to demonstrate students knowledge and ability to implement javaScript code in a simple game.
 As well as displaying competence in writing code in javaScript the website is designed using principles of user experience design, html and css, and is designed to be responsive using basic css.
 The game Rock, Paper, Scissors, Lizard, Spock is an extension of the Rock, Paper, Scissors game and is credited to Sheldon of the Big Bang television series.
-
+---
 
 
 
@@ -56,7 +104,7 @@ The 'DynaPuff' font is the main font used throughout the website with 'cursive' 
 
 ### Imagery
 
-Simple emoji characters are used to represent the elements of the game. The heading of the game consists of the elements in text, followed by the emoji for that element.
+Simple emoji characters are used to represent the elements of the game. 
 
 The game section of the site simply displays five buttons with text to identify the elements that the player can choose from. 
 
@@ -67,11 +115,11 @@ Two display areas displays player choice and score and the other display area th
 Game Page Wireframe 
 
 ![Wireframe](./assets/images/readme_images/Rock-Paper-Scissors-Lizard-Spock.png)
-
+---
 
 # Features
 
-Responsive on all device sizes. 
+An attempt to avoid excessive use of media queries led to the use of one media query that changed the display area from 80% of the game area container to 100% of the container at 580 pixels. This was necessary for smaller device screens as the images were spilling over and distorting the user experience.  Responsiveness was maintained on devices just below 300 pixels and smaller than this does result in distortion of the display area images. 
 
 ## Structure
 
@@ -89,7 +137,7 @@ Message area displays information to the user such as 'New Game', 'Player Wins',
 
 ### Player and Computer Image Selection and Score
 
-The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javaScript functions, as per rules of game, deciding which score should be incremented (or not if its a tie). Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas. After either player reached a score of 7 then that player wins the set and set score is registered under emoji image. Game scores are reset to zero and the game proceeds until either player reaches 7 again and set score is updated and new game starts. The first to 5 sets wins the match and reaches game over - a smily or sad face emoji is displayed in both player and computer display areas.
+The two display areas display player and computer choice and score. After game starts or reset both scores start at zero and increment as play progresses with logic operators in javaScript functions, as per rules of game, deciding which score should be incremented (or not if its a tie). Enlarged emoji images representing the player choice and computer choice are displayed in their respective display areas. After either player reached a score of 7 then that player wins the set and set score is registered under emoji image. Game scores are reset to zero and the game proceeds until either player reaches 7 again and set score is updated and new game starts. The first to 5 sets wins the match and reaches game over - a smily or sad face emoji is displayed in both player and computer display areas to reflect if player wins or loses.
 
 
 ![Player and Computer Image Selection and Score](./assets/images/readme_images/player-computer-selection-score.png)
@@ -98,12 +146,12 @@ The two display areas display player and computer choice and score. After game s
 
 The Reset Game button in the footer is used to reset the game at any stage during play. When game completed (when player wins or loses game) the Reset Game must be pressed to initiate a new game. 
 
-The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view rules, click on  'Rules & Info' button in footer and rules will appear in a popup which can be collapsed again by clicking x. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and how first to seven games wins the set and the first to win five sets wins the match.
-On loading the game for the first time or on reset the rules popup starts up 2 seconds when page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on x in modal.
+The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view rules, click on  'Rules & Info' button in footer and rules will appear in a popup which can be collapsed again by clicking x. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and charactoristic of this game where first to seven games wins the set and the first to win five sets wins the match.
+On loading the game for the first time the rules model starts up 2 seconds after page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on x in modal.
 
 
 ![footer](./assets/images/readme_images/footer.png)
-
+---
 
 ## Technologies Used
 
@@ -148,6 +196,10 @@ Used to remove background on images and resize images.
 - favicon.io
 Favicon generator used to generate favicon for game. 
 
+- Markdown Table of Contents
+Table of contents generated: https://ecotrust-canada.github.io/markdown-toc
+---
+
 
 ## Testing
 
@@ -161,7 +213,8 @@ As can be seen from the chart below there are 25 possible outcomes and applying 
 
 ![Game Logic Test](/assets/images/readme_images/game-logic-test.png)
 
-Testing 
+### Testing code integrity
+
 The W3C Markup Validator and W3C CSS Validator services were used to validate the project to ensure there were no syntax errors. The jshint JavaScript test utility was uses to check for jacaScript errors in the project. The results are shown below.  
 
 - W3C Markup Validator - Results
@@ -207,20 +260,27 @@ Lighthouse desktop results:
 ### Further Testing
 
 - The Website was tested on Google Chrome, Firefox Developer and Safari browsers. Game worked as expected with media query expanding screen to 100% at 580 pixels. Screen integrity remains until it goes below 300 pixels when there is overflow in display area.
+
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7 and iPhoneX.
-- A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
+
+- A large amount of testing was done during coding to ensure that all components of game, html, css and JavaScript linking correctly.
+
 - Friends and family members were asked to review the site and point out any bugs or issues.
 
 
 ## Known Bugs
 
-On some mobile devices the computer display area is larger than the player display area. This is attributed to "Computer score:" spilling over onto two lines and pushing image down.
+On inspecting console this error comes up in google chrome:
+localhost/:1 Unchecked runtime.lastError: The message port closed before a response was received.
+Chrome throws this error when either there is a conflict with an extension or some of the onMessage listeners in your created extension is expected to return a promise. By toggling off all the installed extensions in your chrome browser and reloading the page the issue may be resolved. As this is beyond the scope of the assignment at this time the eror was not resolved.
 
 ## Limitations and further improvements
 
 - For further improvements the introduction of animation of emogi images would highlight a winning event and would add to visual experience.
 
 - Log in function where user can log their username and game would keep a record of scores. However there may be limitations on recording scores when game is finished and data is lost.
+
+
 
 
 # Deployment
@@ -252,6 +312,8 @@ To make a copy of the original repository on GitHub account so as to make change
 
 - You should now have a copy of the original repository in your GitHub account.
 
+- Work can be done on the fork without effecting the main code. When the fork coding is complee the fork can be merged with the main code. This can be done by simply clicking the pull request button on the GitHub page of your fork. The owner of the original repository will then be notified of your changes and may merge them. In the best case (when there are no merge conflicts), this can be done by simply clicking the “merge” button. 
+
 
 # Credits
 
@@ -263,12 +325,12 @@ After researching various strategies to implement rules of game through JavaScri
 
 Hash table: [JavaScript hash table:](https://stackoverflow.com/questions/22623331/rock-paper-scissors-lizard-spock-in-javaScript)
 
-Popup code credited to W3Schooles.com [w3schools.com](https://w3schools.com)
+Pop up modal code credited to W3Schooles.com [w3schools.com](https://w3schools.com)
 
 
 ## Content
 
-All content was written by the developer.
+All content was written by the developer and where code or content was modified from other source this has been credited to that source.
 
 
 ## Media
