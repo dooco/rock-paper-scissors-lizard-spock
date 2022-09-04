@@ -19,6 +19,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-rows: 1fr auto;
+    align-items: flex-end;
 }
 body > * {
   /* flex: 1; */
@@ -34,11 +35,7 @@ h3 {
 section {
   
 }
-header {
-    text-align: center;
-    height: 3.125rem;
-    /* padding: 2rem 0; */
-}
+
 .display-area {
   flex: 1 0 auto;
   
@@ -53,6 +50,8 @@ footer {
     grid-row-end: 4;
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     margin-top: auto;
     width: 100%;
     left: 0;
