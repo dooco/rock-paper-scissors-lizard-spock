@@ -9,7 +9,6 @@ html {
   height: 100%;
 }
 
-
 body {
     min-height: 100%;
     background-color: blueviolet;
@@ -21,19 +20,12 @@ body {
     grid-template-rows: 1fr auto;
     align-items: flex-end;
 }
-body > * {
-  /* flex: 1; */
-}
 
 h1, h2 {
     font-size: clamp(1.5rem, 2vw, 4rem);
 }
 h3 {
   font-size: clamp(0.8rem, 1.8vw, 3rem);
-}
-/* Header & Footer */
-section {
-  
 }
 
 .display-area {
@@ -44,7 +36,7 @@ section {
   justify-content: center;
   
 }
-
+/* footer area, modal pops up on page load */
 footer {
     grid-row-start: 3;
     grid-row-end: 4;
@@ -64,7 +56,7 @@ footer {
     background-color: black;
     
 }
-footer button {
+button {
   margin: .125rem;
   max-width: 10rem;
   height: 2.5rem;
@@ -73,7 +65,7 @@ footer button {
   cursor: pointer;
   transition: 100ms;
 }
-.footer > button:hover {
+button:hover {
   transform: scale(1.2);
 }
  /* style images */
@@ -84,10 +76,6 @@ img {
 }
 i {
     cursor: pointer;
-}
-.description {
-    text-align: center;
-    height: 2rem;
 }
 
 /* Game area */
@@ -101,7 +89,6 @@ i {
     text-align: center;
     padding-bottom: 2rem;
 }
-
 
 .control {
     margin: .125rem;
@@ -156,63 +143,8 @@ i {
     border-radius: 4px;
 }
 
-/* Popup container  */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* The actual popup */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 540px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
 /* The Modal (background) */
+/* code adapted from w3schools.com */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */

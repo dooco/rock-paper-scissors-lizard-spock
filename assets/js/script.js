@@ -3,18 +3,24 @@
  * Declare constants for DOM elements and choices
  * 
  */
- const buttons = document.getElementsByClassName('control');
- const playerScore = document.getElementById('player-score');
- const computerScore = document.getElementById('computer-score');
- const playerImage = document.getElementById('player-image');
- const computerImage = document.getElementById('computer-image');
- const messages =document.getElementById('messages');
- const playerSetScore = document.getElementById('player-set-score');
- const computerSetScore = document.getElementById('computer-set-score');
- 
-
- const choices = ["rock","paper","scissors","lizard","spock"];
- const setChoice = {
+const buttons = document.getElementsByClassName('control');
+const playerScore = document.getElementById('player-score');
+const computerScore = document.getElementById('computer-score');
+const playerImage = document.getElementById('player-image');
+const computerImage = document.getElementById('computer-image');
+const messages =document.getElementById('messages');
+const playerSetScore = document.getElementById('player-set-score');
+const computerSetScore = document.getElementById('computer-set-score');
+// Get the modal
+var modal = document.getElementById("myModal");
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// Set choices 
+const choices = ["rock","paper","scissors","lizard","spock"];
+// on hash table of objects
+const setChoice = {
     rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
     paper: { name: 'Paper', defeats: ['rock', 'spock'] },
     scissors: { name: 'Scissors', defeats: ['paper', 'lizard'] },
@@ -120,10 +126,6 @@ function resetGame(whoWins) {
     messages.textContent = whoWins;
 }
 
-function myPopup() {
-    popup.classList.toggle("show");
-
-}
 
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
@@ -131,14 +133,7 @@ document.addEventListener("DOMContentLoaded", function() {
      modal.style.display = "block";
     }, 2000)
    });
-   // Get the modal
-var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
