@@ -75,11 +75,6 @@ Responsive on all device sizes.
 
 ## Structure
 
-### Header
-
-The header consists of the five elements of the game in text, followed by the emoji for that element. It introduces the player to the game via simple element / image association.
-
-![heading](./assets/images/readme_images/header-section.png)
 
 ### Player Selection 
 
@@ -87,11 +82,10 @@ Five buttons with text description for player to make their chioce for next itte
 
 ![player selection area](./assets/images/readme_images/player-selection.png)
 
-### Message and Reset Game
+### Message
 
-Message area displays information to the user such as 'New Game', 'Player Wins', Player Looses', It's a Tie'. Below this the player is given the option to 'Reset' the game.
+Message area displays information to the user such as 'New Game', 'Player Wins', Player Looses', It's a Tie'. 
 
-![message and reset game area](./assets/images/readme_images/message-reset.png)
 
 ### Player and Computer Image Selection and Score
 
@@ -100,12 +94,15 @@ The two display areas display player and computer choice and score. After game s
 
 ![Player and Computer Image Selection and Score](./assets/images/readme_images/player-computer-selection-score.png)
 
-### Footer (Rules)
+### Footer 
 
-The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view  rules, click on footer and rules will appear in a popup which can be collapsed again by clicking on popup. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and how first to seven games wins the set and the first to win five sets wins the match.
-On loading the game for the first time or on reset the rules popup starts up 2 seconds when page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on footer or popup.
+The Reset Game button in the footer is used to reset the game at any stage during play. When game completed (when player wins or loses game) the Reset Game must be pressed to initiate a new game. 
 
-![rules](./assets/images/readme_images/rules-popup.png)
+The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view rules, click on  'Rules & Info' button in footer and rules will appear in a popup which can be collapsed again by clicking x. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and how first to seven games wins the set and the first to win five sets wins the match.
+On loading the game for the first time or on reset the rules popup starts up 2 seconds when page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on x in modal.
+
+
+![rules](./assets/images/readme_images/footer.png)
 
 
 ## Technologies Used
