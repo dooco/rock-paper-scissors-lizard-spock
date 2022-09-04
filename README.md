@@ -102,7 +102,7 @@ The rules of the game need to be available to player but take up a lot of screen
 On loading the game for the first time or on reset the rules popup starts up 2 seconds when page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on x in modal.
 
 
-![rules](./assets/images/readme_images/footer.png)
+![footer](./assets/images/readme_images/footer.png)
 
 
 ## Technologies Used
@@ -120,9 +120,6 @@ Hover.css was used on the Player selection buttons in the player choice selectio
 
 - Google Fonts:
 Google fonts were used to import the 'DynaPuff' font into the header section of index.html which is used throughout the project by referencing font family in style.css file.
-
-- Font Awesome:
-Font Awesome was used in the game to add an icon for game reset.
 
 - Git:
 Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
@@ -147,6 +144,9 @@ Used to create colour pallet.
 
 - Canva graphic designer platform
 Used to remove background on images and resize images.
+
+- favicon.io
+Favicon generator used to generate favicon for game. 
 
 
 ## Testing
@@ -206,7 +206,7 @@ Lighthouse desktop results:
 
 ### Further Testing
 
-- The Website was tested on Google Chrome, Firefox Developer and Safari browsers. Game worked as expected except for when screen width went below 540px where the computer display area appeared longer than player s=display area.
+- The Website was tested on Google Chrome, Firefox Developer and Safari browsers. Game worked as expected with media query expanding screen to 100% at 580 pixels. Screen integrity remains until it goes below 300 pixels when there is overflow in display area.
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7 and iPhoneX.
 - A large amount of testing was done to ensure that all components of game, html, css and JavaScript linking correctly.
 - Friends and family members were asked to review the site and point out any bugs or issues.
