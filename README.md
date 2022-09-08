@@ -210,6 +210,25 @@ Testing to maintain integrity of game rules entailed testing player’s five sel
 After completing the test for first player game element (rock) then testing proceeds to second player game element (paper) to that of computer’s random choice and continues until all five of player’s game choice elements are compared to that of computer’s five game elements. 
 As can be seen from the chart below there are 25 possible outcomes and applying rules of game (column two) the outcomes proved true for each test. 
 
+Game progression is also tested at this stage. Player and computer scores are monitored for behaviour under the conditions presented:
+
+Player wins: player score increments.
+
+Player Looses: computer score increments.
+
+It’s a Tie: no increment in either player or computer score.
+
+Player Score = 7: Player set score increments, player score and computer score reset to zero.
+
+Computer Score = 7: Computer set score increments, player score and computer score reset to zero.
+
+Player Set Score = 5: Player wins game. Dispaly Player Wins Game.
+
+Computer Set Score = 5: Player Looses game. Dispaly Player Looses Game.
+
+The observations conducted during testing were as expected.
+
+
 ![Game Logic Test](/assets/images/readme_images/game-logic-test.png)
 
 ### Testing code integrity

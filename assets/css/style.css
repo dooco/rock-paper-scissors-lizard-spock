@@ -8,7 +8,9 @@
 html {
   height: 100%;
 }
-
+header {
+  text-align: center;
+}
 body {
     min-height: 100%;
     background-color: blueviolet;
@@ -29,12 +31,9 @@ h3 {
 }
 
 .display-area {
-  flex: 1 0 auto;
-  
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 /* footer area, modal pops up on page load */
 footer {
@@ -114,7 +113,6 @@ i {
 .player {
     background-color: lightblue;
     border-radius: 4px;
-
 }
 
 #player-image {

@@ -12,15 +12,13 @@
     <title>Rock-Paper-Scissors-Lizard-Spock</title>
 </head>
 <body>
-    <!-- Header used to introduce emojis to player -->
+    <!-- Header used to prompt player to make choice -->
     <header>
-        <!-- <div><img id="header-image" src="./assets/images/RPS.gif"></div> -->
-        <!-- <h1>Rock 👊 Paper ✋ Scissors ✌️ Lizard 🤏 Spock 🖖</h1> -->
+        <h1>Make a choice</h1>
     </header>
-    <section class="game-area">
+    <main class="game-area">
         <!-- Player selects one of the five game options -->
         <div class="select-area">
-            <p>Make a choice</p>
             <button aria-label="Rock" data-choice="0" class="control">Rock</button>
             <button aria-label="Paper" data-choice="1" class="control">Paper</button>
             <button aria-label="Scissors" data-choice="2" class="control">Scissors</button>
@@ -49,8 +47,7 @@
                 </div>
             </div>
         </div>
-        
-    </section>
+    </main>
     <footer>
         <!-- Reset game calls JS reset function -->
         <div><button title = "Reset" onclick="resetAll()"> Reset Game </button></div>
