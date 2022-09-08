@@ -143,13 +143,16 @@ The two display areas display player and computer choice and score. After game s
 
 ### Footer 
 
+![footer](./assets/images/readme_images/footer.png)
+
 The Reset Game button in the footer is used to reset the game at any stage during play. When game completed (when player wins or loses game) the Reset Game must be pressed to initiate a new game. 
 
 The rules of the game need to be available to player but take up a lot of screen space on smaller devices. To view rules, click on  'Rules & Info' button in footer and rules will appear in a popup which can be collapsed again by clicking x. As well as the individual rules that decide a player/computer itteration the popup gives a brief description on where the game originated and charactoristic of this game where first to seven games wins the set and the first to win five sets wins the match.
 On loading the game for the first time the rules model starts up 2 seconds after page is fully loaded. This function is initiated to alert player to rules of the game. The rules can be collapsed by clicking on x in modal.
 
+![Modal](./assets/images/readme_images/modal.png)
 
-![footer](./assets/images/readme_images/footer.png)
+
 ---
 
 ## Technologies Used
@@ -205,6 +208,12 @@ Table of contents generated: https://ecotrust-canada.github.io/markdown-toc
 
 ### Game Logic Test
 
+The initial testing was done on the main button functions of the game. Testing of the five game choice buttons was conducted by pressing on the buttons and observing game responses. The first observation was the expansion by 20% animation of the selected button on hovering over button. Following choice button selection the game displays the emoji image for that choice in the player game area. The observed outcomes were as expected for the five different button choices.
+
+Two buttons in the footer control ‘Game Reset’ and ‘Rules & Info’ options. 
+On pressing ‘Game Reset’ the game resets with player, computer, player set and computer set scores reseting to zero and display area displaying the five emoji game start display. Observation on testing of this button at various stages during the game resulted in expected outcome on each test.
+On pressing ‘Rules & Info’ button a modal information pops up to alert user on rules and information on the game. Pressing the modal close button or anywhere outside the modal will result in the modal collapsing and returning to game.
+Observation on testing of this button at various stages during the game resulted in expected outcome on each test.
 
 Testing to maintain integrity of game rules entailed testing player’s five selections against the computer’s selections. As user controls players choice the test is conducted by moving through the five game elements and observing outcome compared to computer’s choice. As the computer’s choice is random testing has to run through as many iterations of the game so that all five game elements are tested against player’s choice. 
 After completing the test for first player game element (rock) then testing proceeds to second player game element (paper) to that of computer’s random choice and continues until all five of player’s game choice elements are compared to that of computer’s five game elements. 
@@ -261,7 +270,7 @@ No errors were noted.
 
 - Lighthouse analysis
 
-Lighthouse analysis scores quality in five categories; performance, best practice, SEO and qualification as a Progressive Web Application. The analysis was performed on the website on an incognito browser window (as suggested by Lighthouse) for bot mobile and desktop. 
+Lighthouse analysis scores quality in five categories; performance, best practice, SEO and qualification as a Progressive Web Application. The analysis was performed on the website on an incognito browser window (as suggested by Lighthouse) for both mobile and desktop. 
 
 Lighthouse mobile results:
 
@@ -337,7 +346,7 @@ To make a copy of the original repository on GitHub account so as to make change
 
 ## Code
 
-The Code Institute's Portfolio Project 2 Scope video provided the underling html, css and javaScript code for the game. This was modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
+The Code Institute's Portfolio Project 2 Scope video provided the insiration for underling html, css and javaScript code for the game. This was modified and expanded to fit five elements of game Rock, Paper, Scissors, Lizard, Spock.
 
 After researching various strategies to implement rules of game through JavaScript a solution was found on stack overflow.
 
