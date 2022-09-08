@@ -20,7 +20,6 @@
     + [Message](#message)
     + [Player and Computer Image Selection and Score](#player-and-computer-image-selection-and-score)
     + [Footer](#footer)
-  * [![footer](./assets/images/readme_images/footer.png)](#--footer---assets-images-readme-images-footerpng-)
   * [Technologies Used](#technologies-used)
     + [Languages Used](#languages-used)
     + [Frameworks, Libraries & Programs Used](#frameworks--libraries---programs-used)
