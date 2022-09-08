@@ -13,7 +13,7 @@
   * [Typography](#typography)
     + [Imagery](#imagery)
     + [Wireframes](#wireframes)
-  * [![Wireframe](./assets/images/readme_images/Rock-Paper-Scissors-Lizard-Spock.png)](#--wireframe---assets-images-readme-images-rock-paper-scissors-lizard-spockpng-)
+  
 - [Features](#features)
   * [Structure](#structure)
     + [Player Selection](#player-selection)
